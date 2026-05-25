@@ -1,0 +1,6 @@
+{
+  "name": "FOR ELISE, MADE BY KENZU",
+  "description": "An elegant, interactive website of heartfelt letters hidden inside animated envelopes, featuring soft floating tulips, falling rain, and soothing lofi audio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

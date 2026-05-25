@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-float-slow: float-slow 8s ease-in-out infinite;
+  --animate-float-medium: float-medium 6s ease-in-out infinite;
+  --animate-float-fast: float-fast 4s ease-in-out infinite;
+  --animate-sway: sway 5s ease-in-out infinite;
+  --animate-rain: rain 1.5s linear infinite;
+  --animate-cloud-drift: cloud-drift 40s linear infinite;
+  
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+  }
+  @keyframes float-medium {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(-2deg); }
+  }
+  @keyframes float-fast {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-6px) rotate(1deg); }
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-3deg) translateX(-2px); }
+    50% { transform: rotate(3deg) translateX(2px); }
+  }
+  @keyframes rain {
+    0% { transform: translateY(-20px) translateX(0px); opacity: 0; }
+    30% { opacity: 0.6; }
+    80% { opacity: 0.6; }
+    100% { transform: translateY(100vh) translateX(-20px); opacity: 0; }
+  }
+  @keyframes cloud-drift {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100vw); }
+  }
+}
+
+/* Custom styles for cute scrollbars and canvas */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(224, 242, 254, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(186, 230, 253, 0.8);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 211, 252, 0.9);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
