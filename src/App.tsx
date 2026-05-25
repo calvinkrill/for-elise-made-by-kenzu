@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  CloudRain, 
-  Wind, 
-  Coffee, 
-  Sparkles, 
-  Heart, 
-  Layers, 
-  Sun, 
-  Sunset, 
-  Umbrella, 
-  Smile, 
-  Compass, 
+import {
+  CloudRain,
+  Wind,
+  Coffee,
+  Sparkles,
+  Heart,
+  Layers,
+  Sun,
+  Sunset,
+  Umbrella,
+  Smile,
+  Compass,
   CheckCircle,
   Clock,
   BookOpen,
@@ -23,6 +23,10 @@ import CloudBackground from './components/CloudBackground';
 import MusicPlayer from './components/MusicPlayer';
 import Envelope from './components/Envelope';
 import PolaroidCard from './components/PolaroidCard';
+import completeFamilyImg from './assets/images/complete_family_1779711430315.png';
+import beachSunsetImg from './assets/images/beach_sunset_1779711411843.png';
+import schoolGrowthImg from './assets/images/school_growth_1779711463832.png';
+import warmCoffeeImg from './assets/images/warm_coffee_1779711448354.png';
 
 export default function App() {
   // State for dynamic ambience 
@@ -95,7 +99,7 @@ export default function App() {
       id: 1,
       title: 'A Complete Family',
       subtitle: 'My ultimate wishing tree',
-      imageSrc: '/src/assets/images/complete_family_1779711430315.png',
+      imageSrc: completeFamilyImg,
       emoji: '🏠',
       rotation: -3
     },
@@ -103,7 +107,7 @@ export default function App() {
       id: 2,
       title: 'A Quiet Beach',
       subtitle: 'My calm sunset sanctuary',
-      imageSrc: '/src/assets/images/beach_sunset_1779711411843.png',
+      imageSrc: beachSunsetImg,
       emoji: '🌊',
       rotation: 4
     },
@@ -111,7 +115,7 @@ export default function App() {
       id: 3,
       title: 'True Beauty & School',
       subtitle: 'Stories of growth and purpose',
-      imageSrc: '/src/assets/images/school_growth_1779711463832.png',
+      imageSrc: schoolGrowthImg,
       emoji: '🎒',
       rotation: -2
     },
@@ -119,7 +123,7 @@ export default function App() {
       id: 4,
       title: 'Homemade Comfort',
       subtitle: 'Warming coffee after rain',
-      imageSrc: '/src/assets/images/warm_coffee_1779711448354.png',
+      imageSrc: warmCoffeeImg,
       emoji: '☕',
       rotation: 3
     }
